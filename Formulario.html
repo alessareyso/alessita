@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulario</title>
+<style>
+	body{
+		font-family: Times New Roman, sans-serif;/Color de borde*/
+		front-size; 16px;
+	}
+	input[type="text"]{
+		border: 2px solid #F81711; 
+
+		border-radius: 5px
+		padding; 10px
+		front-size: 16px
+		width: 100%
+	}
+
+	label{
+		font-size: 18 px;
+		font-weight: bold;
+	}
+	</style>
+</head>
+<body>
+	
+    <h1>Formulario</h1>
+    <form action="/submit_form" method="post">
+        <label for="nombre">Nombre:</label><br>
+        <input type="text" id="nombre" name="nombre" required><br><br>
+
+        <label for="apellido">Apellido:</label><br>
+        <input type="text" id="apellido" name="apellido" required><br><br>
+
+        <label for="correo">Correo Electrónico:</label><br>
+        <input type="email" id="correo" name="correo" required><br><br>
+
+        <label for="telefono">Teléfono:</label><br>
+        <input type="tel" id="telefono" name="telefono" required><br><br>
+
+        <label for="ciudad">Ciudad:</label><br>
+        <input type="text" id="ciudad" name="ciudad" required><br><br>
+
+        <label for="codigo_postal">Código Postal:</label><br>
+        <input type="text" id="codigo_postal" name="codigo_postal" required><br><br>
+
+        <input type="submit" value="Enviar">
+    </form>
+</body>
+</html>
